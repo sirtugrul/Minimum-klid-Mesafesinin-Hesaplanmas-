@@ -1,0 +1,25 @@
+def euclidenDistance(a1,a2,b1,b2):
+    
+    oklid = (((b1-a1)**2)+((b2-a2)**2))**(1/2)
+    distances.append(oklid)
+   
+def min_oklid(liste):
+    print("Minimum Oklid: ",min(liste))
+    
+distances=[]
+liste = [(1,2),(3,4),(17,9),(21,67),(-15,0)]
+sonuc=0
+for i in range(len(liste)):
+    for j in range(i+1,len(liste)):
+        t1=liste[i]
+        a1 = t1[0]
+        b1 = t1[1]
+        t2=liste[j]
+        a2 = t2[0]
+        b2 = t2[1]  
+        a1=int(a1)
+        a2=int(a2)
+        b1=int(b1)
+        b2=int(b2)
+        euclidenDistance(a1,a2,b1,b2)
+min_oklid(distances)
